@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
 import Home from './Home';
 
 import "./styles.css";
@@ -71,7 +70,7 @@ function App() {
           {renderErrorMessage("pass")}
         </div>
         <div className="button-container">
-          <input type="submit" />
+          <input type="submit" value="Sign In"/>
         </div>
       </form>
     </div>
@@ -80,7 +79,7 @@ function App() {
   return (
     <div className="app">
       <div className="login-form">
-        <div className="title">Sign In</div>
+        <div className="title"></div>
         {isSubmitted ? <Home /> : renderForm}
       </div>
     </div>
